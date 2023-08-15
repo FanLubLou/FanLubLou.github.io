@@ -1,0 +1,47 @@
+
+.main-wrapper {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.headerwrapper {
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    &__logo {
+        display: flex;    
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 63px;
+        img {
+            /* je fixe la largeur, j'aurais pu fixer la hauteur */
+            width: 197px;
+        }
+    }
+    &__location {
+        display: flex;
+        background-color: var(--bg-grey-2);
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        gap: 17px;
+        // je décalle artificiellement l'ensemble pour que l'icone de localisation soit en dessous de l'espace entre le O et le h
+        padding-left: 40px;
+        .location-lookfor {
+            background-color: transparent;
+            border: none;
+            font-family: "Roboto";
+            color: var(--ft-grey-3);
+            font-size: 1rem;            
+        }
+    }
+}
+
+
