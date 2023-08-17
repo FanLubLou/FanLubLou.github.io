@@ -6,13 +6,25 @@
     --Tertiary-color: #99E2D0;
     --bg-grey-1: #f6f6f6;
     --bg-grey-2: #EAEAEA;
-    --ft-grey-3: #353535
+    --ft-grey-3: #353535;
+    --elt-grey-4: #7E7E7E;
 
 }
 
 h1, h2, h3, h4, p, body {
     margin: 0;
   }
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.125rem;
+}
+p {
+    font-size: 1rem;
+}
 
 a {
     text-decoration: none;

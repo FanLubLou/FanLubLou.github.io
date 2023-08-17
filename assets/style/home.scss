@@ -4,6 +4,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     
 }
 
@@ -48,6 +51,9 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 .restaurant-exploration {
@@ -72,12 +78,10 @@ main {
         // Equivalents en px pour une vw de 375px
         // margin-left: 42px;
         // margin-right: 58px;
-        margin-bottom: 0px;
-        
-        h1 {
-            font-size: 1.5rem;
-        }
+        margin-bottom: 0px;       
+       
     }
+
     &__subtitle {
         width: 315px;
         height: 46px;
@@ -85,7 +89,6 @@ main {
         margin-right: 7%;
         text-align: center;
         h2{
-            font-size: 1.125rem;
             font-weight: lighter;
         }
     }
@@ -102,5 +105,59 @@ main {
         margin-left: 1%;
         // margin-left: 3.5px;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        transition: background-color 0.3s ease-out, background-color 0.3s ease-out;
+
+        &:hover {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(182deg, #9356DC 0%, #FF79DA 100%);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+        }
     }
+} 
+.operation {
+    height: 440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 48px 20px;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    h1{
+        margin-bottom: 26px;
+    }
+    &__element{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 25px;
+        width: 322px;
+        height: 72px;
+        background-color: var(--bg-grey-1);
+        box-sizing: border-box;
+        padding-top: 28.59px;
+        padding-bottom: 28.12px;
+        // margin-left: 210.98px;
+        margin-bottom: 24.94px;
+        
+        i {
+            color: var(--elt-grey-4);
+            margin-right: 27px;
+            margin-left: 21.98px;
+        }
+        &__circle{
+            border-radius: 24px;
+            width: 24px;
+            height: 24px;
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -12px;
+        }
+    }
+
+
 }
