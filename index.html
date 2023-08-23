@@ -38,79 +38,87 @@
                 <a class="restaurant-exploration__btn" href="#">Explorer nos restaurants</a>                
             </section>
             <section class="operation">
-                <h1>Fonctionnement</h1>
-                <div class="operation__element">
-                    <span class="operation__element__circle">
-                        1
-                    </span>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <p>Choississez un restaurant</p>
+                <div class="operation__main-container">
+                    <h1>Fonctionnement</h1>
+                    <div class="operation__main-container__container">
+                        <div class="operation__main-container__container__element">
+                            <span class="operation__main-container__container__element__circle">
+                                1
+                            </span>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <p>Choississez un restaurant</p>
+                        </div>
+                        <div class="operation__main-container__container__element">
+                            <span class="operation__main-container__container__element__circle">
+                                2
+                            </span>
+                            <i class="fa-solid fa-list"></i>
+                            <p>Composez votre menu</p>
+                        </div>
+                        <div class="operation__main-container__container__element">
+                            <span class="operation__main-container__container__element__circle">
+                                3
+                            </span>
+                            <!-- ici, j'utilise un id pour colorer uniquement l'icône store -->
+                            <!-- un inline style m'aurait paru plus simple mais pour ce projet,  -->
+                            <!-- nous avons convenu avec le mentor que nous evitererions cette solution -->
+                            <i class="fa-solid fa-store" id="purple"></i>
+                            <p>Dégustez au restaurant</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="operation__element">
-                    <span class="operation__element__circle">
-                        2
-                    </span>
-                    <i class="fa-solid fa-list"></i>
-                    <p>Composez votre menu</p>
-                </div>
-                <div class="operation__element">
-                    <span class="operation__element__circle">
-                        3
-                    </span>
-                    <!-- ici, j'utilise un id pour colorer uniquement l'icône store -->
-                    <!-- un inline style m'aurait paru plus simple mais pour ce projet,  -->
-                    <!-- nous avons convenu avec le mentor que nous evitererions cette solution -->
-                    <i class="fa-solid fa-store" id="purple"></i>
-                    <p>Dégustez au restaurant</p>
-                </div>
-                
 
 
             </section>
             <section class="restaurants-visualisation">
-                <h1>Restaurants</h1>
-                <div class="restaurants-visualisation__container">
-                    <div class="restaurants-visualisation__container__card">
-                        <span class="restaurants-visualisation__container__card__info">Nouveau</span>
-                        <img src="././assets/images/restaurants/Picture1.jpg" alt="Plat dressé dans un restaurant">
-                        <h2>La palette du goût</h2>
-                        <p>Ménilmontant</p>
-                        <i class="fa-regular fa-heart fa-xl"></i>                    
+                <div class="restaurants-visualisation__main-container">
+                    <h1>Restaurants</h1>
+                    <div class="restaurants-visualisation__main-container__container">
+                        <div class="restaurants-visualisation__main-container__container__card">
+                            <span class="restaurants-visualisation__main-container__container__card__info">Nouveau</span>
+                            <img src="././assets/images/restaurants/Picture1.jpg" alt="Plat dressé dans un restaurant">
+                            <h2>La palette du goût</h2>
+                            <p>Ménilmontant</p>
+                            <i class="fa-regular fa-heart fa-xl" aria-hidden="true"></i>                    
+                        </div>
+                        <div class="restaurants-visualisation__main-container__container__card">
+                            <span class="restaurants-visualisation__main-container__container__card__info">Nouveau</span>
+                            <img src="././assets/images/restaurants/Picture2.jpg" alt="Plat dressé dans un restaurant">
+                            <h2 >La note enchantée</h2>
+                            <p>Charonne</p>
+                            <i class="fa-solid fa-heart fa-xl purple" aria-hidden="true"></i>
+                            <!-- <img src=".\assets\images\logo\heart-solid.svg" alt="coeur en SVG" class="purple">                     -->
+                        </div>
+                        <div class="restaurants-visualisation__main-container__container__card">
+                            <img src="././assets/images/restaurants/Picture3.jpg" alt="Plat dressé dans un restaurant">
+                            <h2>À la française</h2>
+                            <p>Cité Rouge</p>
+                            <i class="fa-solid fa-heart fa-xl coeur" id="purple-gradient" aria-hidden="true"></i>                                            
+                        </div>
+                        <div class="restaurants-visualisation__main-container__container__card">
+                            <img src="././assets/images/restaurants/Picture4.jpg" alt="Plat dressé dans un restaurant">
+                            <h2>Le délice des sens</h2>
+                            <p>Folie-Méricourt</p>
+                            <i class="fa-regular fa-heart fa-xl"aria-hidden="true"></i>                  
+                        </div>
                     </div>
-                    <div class="restaurants-visualisation__container__card">
-                        <span class="restaurants-visualisation__container__card__info">Nouveau</span>
-                        <img src="././assets/images/restaurants/Picture2.jpg" alt="Plat dressé dans un restaurant">
-                        <h2 class="purple">La note enchantée</h2>
-                        <p>Charonne</p>
-                        <i class="fa-solid fa-heart fa-xl purple"></i>                    
-                    </div>
-                    <div class="restaurants-visualisation__container__card">
-                        <img src="././assets/images/restaurants/Picture3.jpg" alt="Plat dressé dans un restaurant">
-                        <h2>À la française</h2>
-                        <p>Cité Rouge</p>
-                        <i class="fa-solid fa-heart fa-xl" id="purple-gradient"></i>                                            
-                    </div>
-                    <div class="restaurants-visualisation__container__card">
-                        <img src="././assets/images/restaurants/Picture4.jpg" alt="Plat dressé dans un restaurant">
-                        <h2>Le délice des sens</h2>
-                        <p>Folie-Méricourt</p>
-                        <i class="fa-regular fa-heart fa-xl"></i>                  
-                    </div>
-                </div>
+                </div>    
             </section>
         </main>
         <footer>
-            <h2>ohmyfood</h2>
-            <div class="footer-content">                
-                <div class="footer-content__alignment">
-                    <i class="fa-solid fa-utensils"></i>
-                    <p>Proposer un restaurant</p>                    
+            <div class="container-footer">
+                <h2>ohmyfood</h2>
+                <div class="container-footer__footer-content">                
+                    <div class="container-footer__footer-content__alignment">
+                        <i class="fa-solid fa-utensils"></i>
+                        <p>Proposer un restaurant</p>                    
+                    </div>
+                    <div class="container-footer__footer-content__alignment">
+                        <i class="fa-solid fa-handshake-angle fa-xs"></i>
+                        <p>Devenir partenaire </p>                    
+                    </div>
+                    <p>Mentions légales</p>                   
                 </div>
-                <div class="footer-content__alignment">
-                    <i class="fa-solid fa-handshake-angle fa-xs"></i>
-                    <p>Devenir partenaire </p>                    
-                </div>
-                <p>Mentions légales</p>                   
             </div>
         </footer>
 

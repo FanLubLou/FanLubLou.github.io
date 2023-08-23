@@ -78,7 +78,11 @@ main {
         // Equivalents en px pour une vw de 375px
         // margin-left: 42px;
         // margin-right: 58px;
-        margin-bottom: 0px;       
+        margin-bottom: 0px;
+        @media (min-width: 1440px){
+            width: 645px;
+            height: 47px;
+        }       
        
     }
 
@@ -91,6 +95,10 @@ main {
         h2{
             font-weight: lighter;
         }
+        @media (min-width: 1024px){
+            width: 531px;
+            
+        }   
     }
     &__btn {
         border-radius: 25px;
@@ -114,8 +122,14 @@ main {
     }
 } 
 
-.purple {
-    fill: linear-gradient(yellow, red);
+.coeur {
+    // fill: url(heart-solid.svg#my-cool-gradient) #447799;
+    // margin-left: 300px;
+    // z-index: 1000;
+    background-image: linear-gradient(to right, red, white);
+    -webkit-background-clip: text;
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
     
 }
 .operation {
@@ -123,55 +137,83 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    padding: 48px 20px;
     align-items: center;
+    justify-content: center;
+    margin: auto;
+    box-sizing: border-box;
+        @media (min-width: 1440px) {
+        justify-content: center;
+        height: 229px;
     
-    margin-left: auto;
-    h1{
-        margin-bottom: 26px;
     }
-    &__element{
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        border-radius: 25px;
-        width: 322px;
-        height: 72px;
-        background-color: var(--bg-grey-1);
+    &__main-container{
         box-sizing: border-box;
-        padding-top: 28.59px;
-        padding-bottom: 28.12px;
-        // margin-left: 210.98px;
-        margin-bottom: 24.94px;
-        
-        i {
-            color: var(--elt-grey-4);
-            margin-right: 27px;
-            margin-left: 21.98px;
-            
-            
+        width: 375px;
+        padding: 48px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @media (min-width: 1440px) {
+            width: 100%;
+            padding: 50px 180px;
+
+        }    
+        h1{
+            margin-bottom: 26px;
         }
-        
-        // <!-- ici, j'utilise un id pour colorer uniquement l'icône store -->
-        // <!-- un inline style m'aurait paru plus simple mais pour ce projet,  -->
-        // <!-- nous avons convenu avec le mentor que nous evitererions cette solution -->
+        &__container{
+            @media (min-width: 1440px) {
+                display: flex;
+                flex-direction: row;
+                gap: 24px;
+            }
+            &__element{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                border-radius: 25px;
+                width: 322px;
+                height: 72px;
+                background-color: var(--bg-grey-1);
+                box-sizing: border-box;
+                padding-top: 28.59px;
+                padding-bottom: 28.12px;
+                // margin-left: 210.98px;
+                margin-bottom: 24.94px;
+                
+                i {
+                    // color: var(--elt-grey-4);
+                    margin-right: 27px;
+                    margin-left: 21.98px;
                     
-        // #purple {
-        //     color: #9356DC;
-        // }
-        &__circle{
-            border-radius: 24px;
-            width: 24px;
-            height: 24px;
-            background-color: var(--primary-color);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-left: -12px;
+                    
+                }
+                
+                // <!-- ici, j'utilise un id pour colorer uniquement l'icône store -->
+                // <!-- un inline style m'aurait paru plus simple mais pour ce projet,  -->
+                // <!-- nous avons convenu avec le mentor que nous evitererions cette solution -->
+                            
+                #purple {
+                    color: #9356DC;
+                }
+                &__circle{
+                    border-radius: 24px;
+                    width: 24px;
+                    height: 24px;
+                    background-color: var(--primary-color);
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: -12px;
+                }
+    
         }
+        
+        }    
+
     }
+    
 }
 .restaurants-visualisation {
     width: 100%;
@@ -183,61 +225,78 @@ main {
     align-items: center;
     margin-left: auto;
     // justify-content: center;
-    h1{
-        margin-top: 6px;
-        margin-left: 3px;
-    }
-    &__container{
-        display: flex;
-        flex-direction: column;
-        &__card{
-            margin-top: 18px;
-            background-color: white;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-            width: 346px;
-            height: 308px;
-            position: relative;
-            img {
-                width: 100%;
-                height: 231px;
+    &__main-container{
+        h1{
+            margin-top: 6px;
+            margin-left: 3px;
+        }
+        &__container{
+            display: flex;
+            flex-direction: column;
+            @media (min-width: 1440px){
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                row-gap: 50px;
+                column-gap: 100px;
+            }
+            &__card{
+                margin-top: 18px;
+                background-color: white;
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
-                // contain marchait sauf pour la deuxième photo, j'opte finalement pour la valeur cover
-                object-fit: cover;
-                margin-bottom: 16px;
-            }
-            h2 {
-                margin-bottom: 5px;
-            }
-            h2, p {
-                margin-left: 13px;
-            }
-            &__info {
-                position: absolute;
-                border-radius: 2px;
-                background-color: var(--green);
-                font-weight: bold;
-                color: var(--green-font);
-                width: 80px;
-                height: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                top: 12px;
-                right: 12px;
-            }
-            i {
-                position : absolute;
-                bottom: 33px;
-                right: 25px;                         
-            }
-            #purple-gradient {
-                color: var(--primary-color);
-            }
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                width: 346px;
+                height: 308px;
+                position: relative;
+                @media (min-width: 1440px) {
+                    width: 490px;
+                }
+                img {
+                    width: 100%;
+                    height: 231px;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                    // contain marchait sauf pour la deuxième photo, j'opte finalement pour la valeur cover
+                    object-fit: cover;
+                    margin-bottom: 16px;
+                }
+                h2 {
+                    margin-bottom: 5px;
+                }
+                h2, p {
+                    margin-left: 13px;
+                }
+                &__info {
+                    position: absolute;
+                    border-radius: 2px;
+                    background-color: var(--green);
+                    font-weight: bold;
+                    color: var(--green-font);
+                    width: 80px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: 12px;
+                    right: 12px;
+                }
+                i {
+                    position : absolute;
+                    bottom: 33px;
+                    right: 25px;
+                    // background-image: linear-gradient(to right, red, white);
+                    // -webkit-background-clip: text;
+                    // background-clip: border-box;
+                    // -webkit-text-fill-color: transparent;                         
+                }
+                #purple-gradient {
+                    color: var(--primary-color);
+                }
+        }
+
     }
+    
     
     }
 }
@@ -247,26 +306,52 @@ footer {
     background-color: var(--ft-grey-3);
     box-sizing: border-box;
     padding: 22px 25px;
-    color: white; 
+    color: white;
+    @media (min-width: 1440px){
+        display: flex;
+        align-items:end;
+        justify-content: flex-end;
+    }
     h2{
         font-family: shrinkand;
         font-style: italic;
         margin-bottom: 16px;
     }
-
-.footer-content{
-                display: flex;
-                flex-direction: column;
-                gap: 7px;
-                &__alignment{
-                    display: flex;
-                    flex-direction: row;
-                    // justify-content: flex-start;
-                    align-items: baseline;
-                    i {
-                        margin-right: 10px;
-                    }    
-                }
+    @media (min-width: 1440px){
+        width: 100%;
+        padding: 30px 25px;
     }
+
+
+.container-footer{
+    @media (min-width: 1440px){
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 16px;
+          
+    }
+    &__footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        @media (min-width: 1440px) {
+            flex-direction: row;
+           
+        }
+
+        &__alignment{
+            display: flex;
+            flex-direction: row;
+            // justify-content: flex-start;
+            align-items: baseline;
+            i {
+                margin-right: 10px;
+            }    
+        }
+}
+
+
+}    
+
 
 }
