@@ -32,3 +32,10 @@ p {
 a {
     text-decoration: none;
 }
+
+// Ici, je ne souhaite pas afficher le style par défaut du navigateur 
+input[type=checkbox] {
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+}
