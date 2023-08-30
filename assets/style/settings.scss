@@ -25,6 +25,11 @@ h1 {
 h2 {
     font-size: 1.125rem;
 }
+
+h3 {
+    font-size: 1rem;
+}
+
 p {
     font-size: 1rem;
 }
@@ -33,9 +38,45 @@ a {
     text-decoration: none;
 }
 
-// Ici, je ne souhaite pas afficher le style par défaut du navigateur 
-input[type=checkbox] {
-    -webkit-appearance: none;
-    appearance: none;
-    -moz-appearance: none;
+// Je créé une mixin ici pour la carte menu
+
+@mixin menu-card{
+    width: 93%;
+    gap:12px;
+    display: flex;
+    flex-direction: column;      
+    &__card {
+        width:100%;
+        border-radius: 15px;
+        background-color: white;
+        padding: 15px;
+        height: 72px;
+        box-sizing: border-box;
+        // Sans box-sizing, on aurait height à 42px
+        box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.10);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__text{            
+            width: 88%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            // on force ici le texte à rester sur une seule ligne
+            white-space: nowrap;
+            
+            h2 {
+                font-weight: 500;
+            }
+            p {
+                font-size: 15px;    
+            }
+        }
+        &__price{
+            font-weight: bold;
+            display: flex;
+            flex-direction: column-reverse;
+            font-weight: 500;
+        }
+    }
 }

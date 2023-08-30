@@ -23,18 +23,16 @@ h2 {
   font-size: 1.125rem;
 }
 
+h3 {
+  font-size: 1rem;
+}
+
 p {
   font-size: 1rem;
 }
 
 a {
   text-decoration: none;
-}
-
-input[type=checkbox] {
-  -webkit-appearance: none;
-  appearance: none;
-  -moz-appearance: none;
 }
 
 .main-wrapper {
@@ -60,6 +58,7 @@ input[type=checkbox] {
   justify-content: center;
   width: 100%;
   height: 63px;
+  gap: 42px;
 }
 .headerwrapper__logo img {
   /* je fixe la largeur, j'aurais pu fixer la hauteur */
@@ -68,6 +67,7 @@ input[type=checkbox] {
 .headerwrapper__location {
   display: flex;
   background-color: var(--bg-grey-2);
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   width: 100%;
   height: 50px;
   align-items: center;
@@ -90,6 +90,12 @@ main {
   align-items: center;
   justify-content: center;
   margin: auto;
+}
+
+main img {
+  height: 275px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .restaurant-exploration {
@@ -268,10 +274,41 @@ main {
   position: absolute;
   bottom: 33px;
   right: 25px;
+  font-size: 22px;
+}
+.restaurants-visualisation__main-container__container__card .full {
   background-image: linear-gradient(175deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 22px;
+  visibility: hidden;
+}
+.restaurants-visualisation__main-container__container__card .empty {
+  visibility: visible;
+}
+.restaurants-visualisation__main-container__container__card #activation1:checked ~ label .empty {
+  visibility: hidden;
+}
+.restaurants-visualisation__main-container__container__card #activation1:checked ~ label .full {
+  visibility: visible;
+}
+.restaurants-visualisation__main-container__container__card #activation2:checked ~ label .empty {
+  visibility: hidden;
+}
+.restaurants-visualisation__main-container__container__card #activation2:checked ~ label .full {
+  visibility: visible;
+}
+.restaurants-visualisation__main-container__container__card #activation3:checked ~ label .empty {
+  visibility: hidden;
+}
+.restaurants-visualisation__main-container__container__card #activation3:checked ~ label .full {
+  visibility: visible;
+}
+.restaurants-visualisation__main-container__container__card #activation4:checked ~ label .empty {
+  visibility: hidden;
+}
+.restaurants-visualisation__main-container__container__card #activation4:checked ~ label .full {
+  visibility: visible;
 }
 @media (min-width: 1440px) {
   .restaurants-visualisation__main-container__container__card {
@@ -357,6 +394,83 @@ footer .container-footer__footer-content__alignment {
 }
 footer .container-footer__footer-content__alignment i {
   margin-right: 10px;
+}
+
+.menu {
+  width: 100%;
+  position: relative;
+  top: -50px;
+  background-color: var(--bg-grey-1);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.menu__title {
+  width: 93%;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 32px;
+}
+.menu h1 {
+  font-style: italic;
+  font-size: 1.75rem;
+}
+.menu i {
+  font-size: 22px;
+}
+.menu__dishes {
+  width: 93%;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.menu__dishes__card {
+  width: 100%;
+  border-radius: 15px;
+  background-color: white;
+  padding: 15px;
+  height: 72px;
+  box-sizing: border-box;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu__dishes__card__text {
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+.menu__dishes__card__text h2 {
+  font-weight: 500;
+}
+.menu__dishes__card__text p {
+  font-size: 15px;
+}
+.menu__dishes__card__price {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column-reverse;
+  font-weight: 500;
+}
+.menu h3 {
+  position: relative;
+  font-weight: 300;
+}
+.menu h3::before {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--green);
 }
 
 /*# sourceMappingURL=style.css.map */
