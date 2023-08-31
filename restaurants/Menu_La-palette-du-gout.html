@@ -31,7 +31,12 @@
             <div class="menu">
                 <section class="menu__title">
                     <h1>La palette du goût</h1>
-                    <i class="fa-regular fa-heart"></i>
+                    <div class="heart">
+                        <input type="checkbox" id="activation1">         
+                        <label for="activation1">
+                            <i class="fa-solid fa-heart full"></i>
+                            <i class="fa-regular fa-heart empty"></i>
+                        </label>
                 </section>
                 <section class="menu__dishes">
                     <div class="menu__dishes__title"></div>
@@ -126,8 +131,25 @@
                         </div>
                     </div>    
                 </section>
+                <a class="restaurant-exploration__btn" href="#">Commander</a>
             </div>
         </main>
+        <footer>
+            <div class="container-footer">
+                <h2>ohmyfood</h2>
+                <div class="container-footer__footer-content">                
+                    <div class="container-footer__footer-content__alignment">
+                        <i class="fa-solid fa-utensils"></i>
+                        <p>Proposer un restaurant</p>                    
+                    </div>
+                    <div class="container-footer__footer-content__alignment">
+                        <i class="fa-solid fa-handshake-angle fa-xs"></i>
+                        <p>Devenir partenaire </p>                    
+                    </div>
+                    <p>Mentions légales</p>                   
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

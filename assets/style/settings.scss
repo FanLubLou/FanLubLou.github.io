@@ -38,6 +38,16 @@ a {
     text-decoration: none;
 }
 
+// J'empêche ici l'affichage par défaut du navigateur
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    // -ms-appearance: none;
+}
+
+
+
 // Je créé une mixin ici pour la carte menu
 
 @mixin menu-card{
