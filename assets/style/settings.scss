@@ -36,6 +36,7 @@ p {
 
 a {
     text-decoration: none;
+    color: inherit; /* Utilise la couleur du texte parent */
 }
 
 // J'empêche ici l'affichage par défaut du navigateur
