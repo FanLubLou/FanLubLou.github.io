@@ -414,6 +414,7 @@ footer .container-footer__footer-content__alignment i {
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  padding-bottom: 40px;
 }
 .menu__title {
   width: 93%;
@@ -455,6 +456,7 @@ footer .container-footer__footer-content__alignment i {
   flex-direction: column;
 }
 .menu__dishes__card {
+  position: relative;
   width: 100%;
   border-radius: 15px;
   background-color: white;
@@ -485,6 +487,33 @@ footer .container-footer__footer-content__alignment i {
   flex-direction: column-reverse;
   font-weight: 500;
 }
+.menu__dishes__card__selectButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--green);
+  height: 100%;
+  width: 59px;
+}
+.menu__dishes__card__selectButton__circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  border: 2px solid var white;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__dishes__card__selectButton__circle i {
+  color: var(--green);
+  font-size: 1rem;
+}
 .menu h3 {
   position: relative;
   font-weight: 300;
@@ -497,6 +526,10 @@ footer .container-footer__footer-content__alignment i {
   width: 40px;
   height: 3px;
   background-color: var(--green);
+}
+
+.height-adaptation {
+  margin-top: -50px;
 }
 
 /*# sourceMappingURL=style.css.map */
