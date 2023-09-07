@@ -500,12 +500,11 @@ footer .container-footer__footer-content__alignment i {
   align-items: center;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: var(--green);
   height: 100%;
-  width: 0px;
+  width: 0;
   padding: 15px 0px;
   opacity: 0;
-  transition: ease-in 0.5s;
+  transition: ease-out 0.25s;
 }
 .menu__dishes__card__selectButton__outline__circle {
   width: 30px;
@@ -528,9 +527,11 @@ footer .container-footer__footer-content__alignment i {
   color: var(--green);
   font-size: 1rem;
 }
-.menu__dishes__card__selectButton:active {
+.menu__dishes__card__selectButton:hover {
   opacity: 1;
   width: 59px;
+  background-color: var(--green);
+  padding: 15px 0px;
 }
 .menu h3 {
   position: relative;

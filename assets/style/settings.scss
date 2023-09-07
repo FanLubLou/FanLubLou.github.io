@@ -118,12 +118,12 @@ input[type=checkbox] {
             align-items: center;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
-            background-color: var(--green);
             height: 100%;
-            width: 0px;
-            padding: 15px 0px;
+            width: 0;
+            padding: 15px 0px; 
             opacity: 0;
-            transition:ease-in 0.5s;
+            transition:ease-out 0.25s;
+            
             &__outline{
                 
                 &__circle{
@@ -155,9 +155,11 @@ input[type=checkbox] {
                     }    
                 }    
             } 
-            &:active {
+            &:hover {
                 opacity: 1;
-                width: 59px;                 
+                width: 59px;
+                background-color: var(--green);
+                padding: 15px 0px;                 
         }
                 
         }
