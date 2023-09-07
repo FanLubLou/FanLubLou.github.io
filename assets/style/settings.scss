@@ -58,43 +58,61 @@ input[type=checkbox] {
     flex-direction: column;      
     &__card {
         // pour pouvoir positionner le bouton de sélection
-        position: relative;
+        // position: relative;
         width:100%;
         border-radius: 15px;
         background-color: white;
-        padding: 15px;
+        // je retire le padding à droite pour que mon selected button colle à la droite de la carte
+        // Plus bas, j'ajouterai un padding right à l'élément price pour avoir le décalage
+        padding: 15px 0px 15px 15px;
         height: 72px;
         box-sizing: border-box;
         // Sans box-sizing, on aurait height à 42px
         box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.10);
         display: flex;
+        align-items: center;
         flex-direction: row;
         justify-content: space-between;
-        &__text{            
-            width: 88%;
+        &__textAndPrice{
+            width: 100%;
             display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            // on force ici le texte à rester sur une seule ligne
-            white-space: nowrap;
-            
-            h2 {
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+            &__text{            
+                width: 88%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                // on force ici le texte à rester sur une seule ligne
+                white-space: nowrap;
+                
+                h2 {
+                    font-weight: 500;
+                }
+                p {
+                    font-size: 15px;    
+                }
+            }
+            &__price{
+                height: 50%;
+                font-weight: bold;
                 font-weight: 500;
-            }
-            p {
-                font-size: 15px;    
-            }
-        }
-        &__price{
-            font-weight: bold;
-            display: flex;
-            flex-direction: column-reverse;
-            font-weight: 500;
-        }
+                // je préfère mettre un padding right à l'élément price pour ne pas avoir à en mettre sur l'élément parent card
+                // Ainsi quand le selected button apparait, il se juxtapose bien avec l'élément parent
+                padding-right: 15px;
+                //Pour l'instant, je ne parviens pas à aligner le price avec le bas
+                // display: flex;
+                // align-items:baseline;
+                // justify-content: flex-end;
+                // flex-direction: column-reverse;
+                    
+                }
+        }        
         &__selectButton{
-            position:absolute;
-            right: 0;
-            top: 0;
+            // position:absolute;
+            // right: 0;
+            // top: 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -102,23 +120,46 @@ input[type=checkbox] {
             border-bottom-right-radius: 15px;
             background-color: var(--green);
             height: 100%;
-            width: 59px;
-
-            &__circle{
-                width: 16px;
-                height: 16px;
-                border-radius: 8px;
-                border: 2px solid var white;
-                background-color: white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            width: 0px;
+            padding: 15px 0px;
+            opacity: 0;
+            transition:ease-in 0.5s;
+            &__outline{
                 
-                i{
-                    color: var(--green);
-                    font-size: 1rem;
-                }
-            }
+                &__circle{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 15px;
+                    border: 2px solid white;
+                    background-color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &__conteneur-i{
+                        display: flex;
+                        // align-items: center;
+                        text-align: center;
+                        justify-content: center;    
+                        
+                        i {
+                            // display: flex;
+                            // align-items: center;
+                            // justify-content: center;
+                            // margin: auto;
+                            // padding: auto;
+                            margin: 50px;
+                            text-align: center;
+                            color: var(--green);
+                            font-size: 1rem;
+                        }
+                    }    
+                }    
+            } 
+            &:active {
+                opacity: 1;
+                width: 59px;                 
+        }
+                
         }
     }
 }

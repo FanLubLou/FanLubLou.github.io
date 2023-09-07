@@ -428,7 +428,7 @@ footer .container-footer__footer-content__alignment i {
   font-style: italic;
   font-size: 1.75rem;
 }
-.menu i {
+.menu .fa-heart {
   position: absolute;
   right: 15px;
   font-size: 22px;
@@ -456,41 +456,45 @@ footer .container-footer__footer-content__alignment i {
   flex-direction: column;
 }
 .menu__dishes__card {
-  position: relative;
   width: 100%;
   border-radius: 15px;
   background-color: white;
-  padding: 15px;
+  padding: 15px 0px 15px 15px;
   height: 72px;
   box-sizing: border-box;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
-.menu__dishes__card__text {
+.menu__dishes__card__textAndPrice {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.menu__dishes__card__textAndPrice__text {
   width: 88%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   white-space: nowrap;
 }
-.menu__dishes__card__text h2 {
+.menu__dishes__card__textAndPrice__text h2 {
   font-weight: 500;
 }
-.menu__dishes__card__text p {
+.menu__dishes__card__textAndPrice__text p {
   font-size: 15px;
 }
-.menu__dishes__card__price {
+.menu__dishes__card__textAndPrice__price {
+  height: 50%;
   font-weight: bold;
-  display: flex;
-  flex-direction: column-reverse;
   font-weight: 500;
+  padding-right: 15px;
 }
 .menu__dishes__card__selectButton {
-  position: absolute;
-  right: 0;
-  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -498,21 +502,35 @@ footer .container-footer__footer-content__alignment i {
   border-bottom-right-radius: 15px;
   background-color: var(--green);
   height: 100%;
-  width: 59px;
+  width: 0px;
+  padding: 15px 0px;
+  opacity: 0;
+  transition: ease-in 0.5s;
 }
-.menu__dishes__card__selectButton__circle {
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
-  border: 2px solid var white;
+.menu__dishes__card__selectButton__outline__circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid white;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.menu__dishes__card__selectButton__circle i {
+.menu__dishes__card__selectButton__outline__circle__conteneur-i {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.menu__dishes__card__selectButton__outline__circle__conteneur-i i {
+  margin: 50px;
+  text-align: center;
   color: var(--green);
   font-size: 1rem;
+}
+.menu__dishes__card__selectButton:active {
+  opacity: 1;
+  width: 59px;
 }
 .menu h3 {
   position: relative;

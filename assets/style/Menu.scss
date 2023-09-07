@@ -24,7 +24,8 @@
             font-style: italic;
             font-size: 1.75rem;
         }
-        i {
+        //ici je précise fa-heart plutôt que i seulement car sinon, je créé une confusion plus tard avec mon autre icône i check de chez Font Awesome
+        .fa-heart {
             position: absolute;
             // left: 308px;
             right: 15px; 
