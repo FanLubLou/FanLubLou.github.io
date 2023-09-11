@@ -449,13 +449,56 @@ footer .container-footer__footer-content__alignment i {
 .menu #activation1:checked ~ label .full {
   visibility: visible;
 }
-.menu__dishes {
+.menu__starter1, .menu__starter2, .menu__starter3, .menu__starter4, .menu__dish1, .menu__dish2, .menu__dish3, .menu__dessert1, .menu__dessert2, .menu__dessert3, .menu__dishes {
   width: 93%;
   gap: 12px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
-.menu__dishes__card {
+@media (max-width: 1440px) {
+  .menu__starter1 #activation2:checked ~ label .menu__starter1__card__selectButton, .menu__starter2 #activation2:checked ~ label .menu__starter1__card__selectButton, .menu__starter3 #activation2:checked ~ label .menu__starter1__card__selectButton, .menu__starter4 #activation2:checked ~ label .menu__starter1__card__selectButton, .menu__dish1 #activation2:checked ~ label .menu__starter1__card__selectButton, .menu__dish2 #activation2:checked ~ label .menu__starter1__card__selectButton, .menu__dish3 #activation2:checked ~ label .menu__starter1__card__selectButton, .menu__dessert1 #activation2:checked ~ label .menu__starter1__card__selectButton, .menu__dessert2 #activation2:checked ~ label .menu__starter1__card__selectButton, .menu__dessert3 #activation2:checked ~ label .menu__starter1__card__selectButton, .menu__dishes #activation2:checked ~ label .menu__starter1__card__selectButton {
+    opacity: 1;
+    width: 59px;
+  }
+  .menu__starter1 #activation3:checked ~ label .menu__starter2__card__selectButton, .menu__starter2 #activation3:checked ~ label .menu__starter2__card__selectButton, .menu__starter3 #activation3:checked ~ label .menu__starter2__card__selectButton, .menu__starter4 #activation3:checked ~ label .menu__starter2__card__selectButton, .menu__dish1 #activation3:checked ~ label .menu__starter2__card__selectButton, .menu__dish2 #activation3:checked ~ label .menu__starter2__card__selectButton, .menu__dish3 #activation3:checked ~ label .menu__starter2__card__selectButton, .menu__dessert1 #activation3:checked ~ label .menu__starter2__card__selectButton, .menu__dessert2 #activation3:checked ~ label .menu__starter2__card__selectButton, .menu__dessert3 #activation3:checked ~ label .menu__starter2__card__selectButton, .menu__dishes #activation3:checked ~ label .menu__starter2__card__selectButton {
+    opacity: 1;
+    width: 59px;
+  }
+  .menu__starter1 #activation4:checked ~ label .menu__starter3__card__selectButton, .menu__starter2 #activation4:checked ~ label .menu__starter3__card__selectButton, .menu__starter3 #activation4:checked ~ label .menu__starter3__card__selectButton, .menu__starter4 #activation4:checked ~ label .menu__starter3__card__selectButton, .menu__dish1 #activation4:checked ~ label .menu__starter3__card__selectButton, .menu__dish2 #activation4:checked ~ label .menu__starter3__card__selectButton, .menu__dish3 #activation4:checked ~ label .menu__starter3__card__selectButton, .menu__dessert1 #activation4:checked ~ label .menu__starter3__card__selectButton, .menu__dessert2 #activation4:checked ~ label .menu__starter3__card__selectButton, .menu__dessert3 #activation4:checked ~ label .menu__starter3__card__selectButton, .menu__dishes #activation4:checked ~ label .menu__starter3__card__selectButton {
+    opacity: 1;
+    width: 59px;
+  }
+  .menu__starter1 #activation5:checked ~ label .menu__starter4__card__selectButton, .menu__starter2 #activation5:checked ~ label .menu__starter4__card__selectButton, .menu__starter3 #activation5:checked ~ label .menu__starter4__card__selectButton, .menu__starter4 #activation5:checked ~ label .menu__starter4__card__selectButton, .menu__dish1 #activation5:checked ~ label .menu__starter4__card__selectButton, .menu__dish2 #activation5:checked ~ label .menu__starter4__card__selectButton, .menu__dish3 #activation5:checked ~ label .menu__starter4__card__selectButton, .menu__dessert1 #activation5:checked ~ label .menu__starter4__card__selectButton, .menu__dessert2 #activation5:checked ~ label .menu__starter4__card__selectButton, .menu__dessert3 #activation5:checked ~ label .menu__starter4__card__selectButton, .menu__dishes #activation5:checked ~ label .menu__starter4__card__selectButton {
+    opacity: 1;
+    width: 59px;
+  }
+  .menu__starter1 #activation6:checked ~ label .menu__dish1__card__selectButton, .menu__starter2 #activation6:checked ~ label .menu__dish1__card__selectButton, .menu__starter3 #activation6:checked ~ label .menu__dish1__card__selectButton, .menu__starter4 #activation6:checked ~ label .menu__dish1__card__selectButton, .menu__dish1 #activation6:checked ~ label .menu__dish1__card__selectButton, .menu__dish2 #activation6:checked ~ label .menu__dish1__card__selectButton, .menu__dish3 #activation6:checked ~ label .menu__dish1__card__selectButton, .menu__dessert1 #activation6:checked ~ label .menu__dish1__card__selectButton, .menu__dessert2 #activation6:checked ~ label .menu__dish1__card__selectButton, .menu__dessert3 #activation6:checked ~ label .menu__dish1__card__selectButton, .menu__dishes #activation6:checked ~ label .menu__dish1__card__selectButton {
+    opacity: 1;
+    width: 59px;
+  }
+  .menu__starter1 #activation7:checked ~ label .menu__dish2__card__selectButton, .menu__starter2 #activation7:checked ~ label .menu__dish2__card__selectButton, .menu__starter3 #activation7:checked ~ label .menu__dish2__card__selectButton, .menu__starter4 #activation7:checked ~ label .menu__dish2__card__selectButton, .menu__dish1 #activation7:checked ~ label .menu__dish2__card__selectButton, .menu__dish2 #activation7:checked ~ label .menu__dish2__card__selectButton, .menu__dish3 #activation7:checked ~ label .menu__dish2__card__selectButton, .menu__dessert1 #activation7:checked ~ label .menu__dish2__card__selectButton, .menu__dessert2 #activation7:checked ~ label .menu__dish2__card__selectButton, .menu__dessert3 #activation7:checked ~ label .menu__dish2__card__selectButton, .menu__dishes #activation7:checked ~ label .menu__dish2__card__selectButton {
+    opacity: 1;
+    width: 59px;
+  }
+  .menu__starter1 #activation8:checked ~ label .menu__dish3__card__selectButton, .menu__starter2 #activation8:checked ~ label .menu__dish3__card__selectButton, .menu__starter3 #activation8:checked ~ label .menu__dish3__card__selectButton, .menu__starter4 #activation8:checked ~ label .menu__dish3__card__selectButton, .menu__dish1 #activation8:checked ~ label .menu__dish3__card__selectButton, .menu__dish2 #activation8:checked ~ label .menu__dish3__card__selectButton, .menu__dish3 #activation8:checked ~ label .menu__dish3__card__selectButton, .menu__dessert1 #activation8:checked ~ label .menu__dish3__card__selectButton, .menu__dessert2 #activation8:checked ~ label .menu__dish3__card__selectButton, .menu__dessert3 #activation8:checked ~ label .menu__dish3__card__selectButton, .menu__dishes #activation8:checked ~ label .menu__dish3__card__selectButton {
+    opacity: 1;
+    width: 59px;
+  }
+  .menu__starter1 #activation9:checked ~ label .menu__dessert1__card__selectButton, .menu__starter2 #activation9:checked ~ label .menu__dessert1__card__selectButton, .menu__starter3 #activation9:checked ~ label .menu__dessert1__card__selectButton, .menu__starter4 #activation9:checked ~ label .menu__dessert1__card__selectButton, .menu__dish1 #activation9:checked ~ label .menu__dessert1__card__selectButton, .menu__dish2 #activation9:checked ~ label .menu__dessert1__card__selectButton, .menu__dish3 #activation9:checked ~ label .menu__dessert1__card__selectButton, .menu__dessert1 #activation9:checked ~ label .menu__dessert1__card__selectButton, .menu__dessert2 #activation9:checked ~ label .menu__dessert1__card__selectButton, .menu__dessert3 #activation9:checked ~ label .menu__dessert1__card__selectButton, .menu__dishes #activation9:checked ~ label .menu__dessert1__card__selectButton {
+    opacity: 1;
+    width: 59px;
+  }
+  .menu__starter1 #activation10:checked ~ label .menu__dessert2__card__selectButton, .menu__starter2 #activation10:checked ~ label .menu__dessert2__card__selectButton, .menu__starter3 #activation10:checked ~ label .menu__dessert2__card__selectButton, .menu__starter4 #activation10:checked ~ label .menu__dessert2__card__selectButton, .menu__dish1 #activation10:checked ~ label .menu__dessert2__card__selectButton, .menu__dish2 #activation10:checked ~ label .menu__dessert2__card__selectButton, .menu__dish3 #activation10:checked ~ label .menu__dessert2__card__selectButton, .menu__dessert1 #activation10:checked ~ label .menu__dessert2__card__selectButton, .menu__dessert2 #activation10:checked ~ label .menu__dessert2__card__selectButton, .menu__dessert3 #activation10:checked ~ label .menu__dessert2__card__selectButton, .menu__dishes #activation10:checked ~ label .menu__dessert2__card__selectButton {
+    opacity: 1;
+    width: 59px;
+  }
+  .menu__starter1 #activation11:checked ~ label .menu__dessert3__card__selectButton, .menu__starter2 #activation11:checked ~ label .menu__dessert3__card__selectButton, .menu__starter3 #activation11:checked ~ label .menu__dessert3__card__selectButton, .menu__starter4 #activation11:checked ~ label .menu__dessert3__card__selectButton, .menu__dish1 #activation11:checked ~ label .menu__dessert3__card__selectButton, .menu__dish2 #activation11:checked ~ label .menu__dessert3__card__selectButton, .menu__dish3 #activation11:checked ~ label .menu__dessert3__card__selectButton, .menu__dessert1 #activation11:checked ~ label .menu__dessert3__card__selectButton, .menu__dessert2 #activation11:checked ~ label .menu__dessert3__card__selectButton, .menu__dessert3 #activation11:checked ~ label .menu__dessert3__card__selectButton, .menu__dishes #activation11:checked ~ label .menu__dessert3__card__selectButton {
+    opacity: 1;
+    width: 59px;
+  }
+}
+.menu__starter1__card, .menu__starter2__card, .menu__starter3__card, .menu__starter4__card, .menu__dish1__card, .menu__dish2__card, .menu__dish3__card, .menu__dessert1__card, .menu__dessert2__card, .menu__dessert3__card, .menu__dishes__card {
   width: 100%;
   border-radius: 15px;
   background-color: white;
@@ -468,45 +511,46 @@ footer .container-footer__footer-content__alignment i {
   flex-direction: row;
   justify-content: space-between;
 }
-.menu__dishes__card__textAndPrice {
+.menu__starter1__card__textAndPrice, .menu__starter2__card__textAndPrice, .menu__starter3__card__textAndPrice, .menu__starter4__card__textAndPrice, .menu__dish1__card__textAndPrice, .menu__dish2__card__textAndPrice, .menu__dish3__card__textAndPrice, .menu__dessert1__card__textAndPrice, .menu__dessert2__card__textAndPrice, .menu__dessert3__card__textAndPrice, .menu__dishes__card__textAndPrice {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
 }
-.menu__dishes__card__textAndPrice__text {
+.menu__starter1__card__textAndPrice__text, .menu__starter2__card__textAndPrice__text, .menu__starter3__card__textAndPrice__text, .menu__starter4__card__textAndPrice__text, .menu__dish1__card__textAndPrice__text, .menu__dish2__card__textAndPrice__text, .menu__dish3__card__textAndPrice__text, .menu__dessert1__card__textAndPrice__text, .menu__dessert2__card__textAndPrice__text, .menu__dessert3__card__textAndPrice__text, .menu__dishes__card__textAndPrice__text {
   width: 88%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   white-space: nowrap;
 }
-.menu__dishes__card__textAndPrice__text h2 {
+.menu__starter1__card__textAndPrice__text h2, .menu__starter2__card__textAndPrice__text h2, .menu__starter3__card__textAndPrice__text h2, .menu__starter4__card__textAndPrice__text h2, .menu__dish1__card__textAndPrice__text h2, .menu__dish2__card__textAndPrice__text h2, .menu__dish3__card__textAndPrice__text h2, .menu__dessert1__card__textAndPrice__text h2, .menu__dessert2__card__textAndPrice__text h2, .menu__dessert3__card__textAndPrice__text h2, .menu__dishes__card__textAndPrice__text h2 {
   font-weight: 500;
 }
-.menu__dishes__card__textAndPrice__text p {
+.menu__starter1__card__textAndPrice__text p, .menu__starter2__card__textAndPrice__text p, .menu__starter3__card__textAndPrice__text p, .menu__starter4__card__textAndPrice__text p, .menu__dish1__card__textAndPrice__text p, .menu__dish2__card__textAndPrice__text p, .menu__dish3__card__textAndPrice__text p, .menu__dessert1__card__textAndPrice__text p, .menu__dessert2__card__textAndPrice__text p, .menu__dessert3__card__textAndPrice__text p, .menu__dishes__card__textAndPrice__text p {
   font-size: 15px;
 }
-.menu__dishes__card__textAndPrice__price {
+.menu__starter1__card__textAndPrice__price, .menu__starter2__card__textAndPrice__price, .menu__starter3__card__textAndPrice__price, .menu__starter4__card__textAndPrice__price, .menu__dish1__card__textAndPrice__price, .menu__dish2__card__textAndPrice__price, .menu__dish3__card__textAndPrice__price, .menu__dessert1__card__textAndPrice__price, .menu__dessert2__card__textAndPrice__price, .menu__dessert3__card__textAndPrice__price, .menu__dishes__card__textAndPrice__price {
   height: 50%;
   font-weight: bold;
   font-weight: 500;
   padding-right: 15px;
 }
-.menu__dishes__card__selectButton {
+.menu__starter1__card__selectButton, .menu__starter2__card__selectButton, .menu__starter3__card__selectButton, .menu__starter4__card__selectButton, .menu__dish1__card__selectButton, .menu__dish2__card__selectButton, .menu__dish3__card__selectButton, .menu__dessert1__card__selectButton, .menu__dessert2__card__selectButton, .menu__dessert3__card__selectButton, .menu__dishes__card__selectButton {
+  opacity: 0;
+  width: 0px;
+  transition: ease-out 0.25s;
   display: flex;
   justify-content: center;
   align-items: center;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   height: 100%;
-  width: 0;
   padding: 15px 0px;
-  opacity: 0;
-  transition: ease-out 0.25s;
+  background-color: var(--green);
 }
-.menu__dishes__card__selectButton__outline__circle {
+.menu__starter1__card__selectButton__outline__circle, .menu__starter2__card__selectButton__outline__circle, .menu__starter3__card__selectButton__outline__circle, .menu__starter4__card__selectButton__outline__circle, .menu__dish1__card__selectButton__outline__circle, .menu__dish2__card__selectButton__outline__circle, .menu__dish3__card__selectButton__outline__circle, .menu__dessert1__card__selectButton__outline__circle, .menu__dessert2__card__selectButton__outline__circle, .menu__dessert3__card__selectButton__outline__circle, .menu__dishes__card__selectButton__outline__circle {
   width: 30px;
   height: 30px;
   border-radius: 15px;
@@ -516,22 +560,22 @@ footer .container-footer__footer-content__alignment i {
   justify-content: center;
   align-items: center;
 }
-.menu__dishes__card__selectButton__outline__circle__conteneur-i {
+.menu__starter1__card__selectButton__outline__circle__conteneur-i, .menu__starter2__card__selectButton__outline__circle__conteneur-i, .menu__starter3__card__selectButton__outline__circle__conteneur-i, .menu__starter4__card__selectButton__outline__circle__conteneur-i, .menu__dish1__card__selectButton__outline__circle__conteneur-i, .menu__dish2__card__selectButton__outline__circle__conteneur-i, .menu__dish3__card__selectButton__outline__circle__conteneur-i, .menu__dessert1__card__selectButton__outline__circle__conteneur-i, .menu__dessert2__card__selectButton__outline__circle__conteneur-i, .menu__dessert3__card__selectButton__outline__circle__conteneur-i, .menu__dishes__card__selectButton__outline__circle__conteneur-i {
   display: flex;
   text-align: center;
   justify-content: center;
 }
-.menu__dishes__card__selectButton__outline__circle__conteneur-i i {
+.menu__starter1__card__selectButton__outline__circle__conteneur-i i, .menu__starter2__card__selectButton__outline__circle__conteneur-i i, .menu__starter3__card__selectButton__outline__circle__conteneur-i i, .menu__starter4__card__selectButton__outline__circle__conteneur-i i, .menu__dish1__card__selectButton__outline__circle__conteneur-i i, .menu__dish2__card__selectButton__outline__circle__conteneur-i i, .menu__dish3__card__selectButton__outline__circle__conteneur-i i, .menu__dessert1__card__selectButton__outline__circle__conteneur-i i, .menu__dessert2__card__selectButton__outline__circle__conteneur-i i, .menu__dessert3__card__selectButton__outline__circle__conteneur-i i, .menu__dishes__card__selectButton__outline__circle__conteneur-i i {
   margin: 50px;
   text-align: center;
   color: var(--green);
   font-size: 1rem;
 }
-.menu__dishes__card__selectButton:hover {
-  opacity: 1;
-  width: 59px;
-  background-color: var(--green);
-  padding: 15px 0px;
+@media (min-width: 1440px) {
+  .menu__starter1__card:hover .menu__starter1__card__selectButton, .menu__starter1__card:hover .menu__starter2__card__selectButton, .menu__starter1__card:hover .menu__starter3__card__selectButton, .menu__starter1__card:hover .menu__starter4__card__selectButton, .menu__starter1__card:hover .menu__dish1__card__selectButton, .menu__starter1__card:hover .menu__dish2__card__selectButton, .menu__starter1__card:hover .menu__dish3__card__selectButton, .menu__starter1__card:hover .menu__dessert1__card__selectButton, .menu__starter1__card:hover .menu__dessert2__card__selectButton, .menu__starter1__card:hover .menu__dessert3__card__selectButton, .menu__starter2__card:hover .menu__starter1__card__selectButton, .menu__starter2__card:hover .menu__starter2__card__selectButton, .menu__starter2__card:hover .menu__starter3__card__selectButton, .menu__starter2__card:hover .menu__starter4__card__selectButton, .menu__starter2__card:hover .menu__dish1__card__selectButton, .menu__starter2__card:hover .menu__dish2__card__selectButton, .menu__starter2__card:hover .menu__dish3__card__selectButton, .menu__starter2__card:hover .menu__dessert1__card__selectButton, .menu__starter2__card:hover .menu__dessert2__card__selectButton, .menu__starter2__card:hover .menu__dessert3__card__selectButton, .menu__starter3__card:hover .menu__starter1__card__selectButton, .menu__starter3__card:hover .menu__starter2__card__selectButton, .menu__starter3__card:hover .menu__starter3__card__selectButton, .menu__starter3__card:hover .menu__starter4__card__selectButton, .menu__starter3__card:hover .menu__dish1__card__selectButton, .menu__starter3__card:hover .menu__dish2__card__selectButton, .menu__starter3__card:hover .menu__dish3__card__selectButton, .menu__starter3__card:hover .menu__dessert1__card__selectButton, .menu__starter3__card:hover .menu__dessert2__card__selectButton, .menu__starter3__card:hover .menu__dessert3__card__selectButton, .menu__starter4__card:hover .menu__starter1__card__selectButton, .menu__starter4__card:hover .menu__starter2__card__selectButton, .menu__starter4__card:hover .menu__starter3__card__selectButton, .menu__starter4__card:hover .menu__starter4__card__selectButton, .menu__starter4__card:hover .menu__dish1__card__selectButton, .menu__starter4__card:hover .menu__dish2__card__selectButton, .menu__starter4__card:hover .menu__dish3__card__selectButton, .menu__starter4__card:hover .menu__dessert1__card__selectButton, .menu__starter4__card:hover .menu__dessert2__card__selectButton, .menu__starter4__card:hover .menu__dessert3__card__selectButton, .menu__dish1__card:hover .menu__starter1__card__selectButton, .menu__dish1__card:hover .menu__starter2__card__selectButton, .menu__dish1__card:hover .menu__starter3__card__selectButton, .menu__dish1__card:hover .menu__starter4__card__selectButton, .menu__dish1__card:hover .menu__dish1__card__selectButton, .menu__dish1__card:hover .menu__dish2__card__selectButton, .menu__dish1__card:hover .menu__dish3__card__selectButton, .menu__dish1__card:hover .menu__dessert1__card__selectButton, .menu__dish1__card:hover .menu__dessert2__card__selectButton, .menu__dish1__card:hover .menu__dessert3__card__selectButton, .menu__dish2__card:hover .menu__starter1__card__selectButton, .menu__dish2__card:hover .menu__starter2__card__selectButton, .menu__dish2__card:hover .menu__starter3__card__selectButton, .menu__dish2__card:hover .menu__starter4__card__selectButton, .menu__dish2__card:hover .menu__dish1__card__selectButton, .menu__dish2__card:hover .menu__dish2__card__selectButton, .menu__dish2__card:hover .menu__dish3__card__selectButton, .menu__dish2__card:hover .menu__dessert1__card__selectButton, .menu__dish2__card:hover .menu__dessert2__card__selectButton, .menu__dish2__card:hover .menu__dessert3__card__selectButton, .menu__dish3__card:hover .menu__starter1__card__selectButton, .menu__dish3__card:hover .menu__starter2__card__selectButton, .menu__dish3__card:hover .menu__starter3__card__selectButton, .menu__dish3__card:hover .menu__starter4__card__selectButton, .menu__dish3__card:hover .menu__dish1__card__selectButton, .menu__dish3__card:hover .menu__dish2__card__selectButton, .menu__dish3__card:hover .menu__dish3__card__selectButton, .menu__dish3__card:hover .menu__dessert1__card__selectButton, .menu__dish3__card:hover .menu__dessert2__card__selectButton, .menu__dish3__card:hover .menu__dessert3__card__selectButton, .menu__dessert1__card:hover .menu__starter1__card__selectButton, .menu__dessert1__card:hover .menu__starter2__card__selectButton, .menu__dessert1__card:hover .menu__starter3__card__selectButton, .menu__dessert1__card:hover .menu__starter4__card__selectButton, .menu__dessert1__card:hover .menu__dish1__card__selectButton, .menu__dessert1__card:hover .menu__dish2__card__selectButton, .menu__dessert1__card:hover .menu__dish3__card__selectButton, .menu__dessert1__card:hover .menu__dessert1__card__selectButton, .menu__dessert1__card:hover .menu__dessert2__card__selectButton, .menu__dessert1__card:hover .menu__dessert3__card__selectButton, .menu__dessert2__card:hover .menu__starter1__card__selectButton, .menu__dessert2__card:hover .menu__starter2__card__selectButton, .menu__dessert2__card:hover .menu__starter3__card__selectButton, .menu__dessert2__card:hover .menu__starter4__card__selectButton, .menu__dessert2__card:hover .menu__dish1__card__selectButton, .menu__dessert2__card:hover .menu__dish2__card__selectButton, .menu__dessert2__card:hover .menu__dish3__card__selectButton, .menu__dessert2__card:hover .menu__dessert1__card__selectButton, .menu__dessert2__card:hover .menu__dessert2__card__selectButton, .menu__dessert2__card:hover .menu__dessert3__card__selectButton, .menu__dessert3__card:hover .menu__starter1__card__selectButton, .menu__dessert3__card:hover .menu__starter2__card__selectButton, .menu__dessert3__card:hover .menu__starter3__card__selectButton, .menu__dessert3__card:hover .menu__starter4__card__selectButton, .menu__dessert3__card:hover .menu__dish1__card__selectButton, .menu__dessert3__card:hover .menu__dish2__card__selectButton, .menu__dessert3__card:hover .menu__dish3__card__selectButton, .menu__dessert3__card:hover .menu__dessert1__card__selectButton, .menu__dessert3__card:hover .menu__dessert2__card__selectButton, .menu__dessert3__card:hover .menu__dessert3__card__selectButton, .menu__dishes__card:hover .menu__starter1__card__selectButton, .menu__dishes__card:hover .menu__starter2__card__selectButton, .menu__dishes__card:hover .menu__starter3__card__selectButton, .menu__dishes__card:hover .menu__starter4__card__selectButton, .menu__dishes__card:hover .menu__dish1__card__selectButton, .menu__dishes__card:hover .menu__dish2__card__selectButton, .menu__dishes__card:hover .menu__dish3__card__selectButton, .menu__dishes__card:hover .menu__dessert1__card__selectButton, .menu__dishes__card:hover .menu__dessert2__card__selectButton, .menu__dishes__card:hover .menu__dessert3__card__selectButton {
+    opacity: 1;
+    width: 59px;
+  }
 }
 .menu h3 {
   position: relative;

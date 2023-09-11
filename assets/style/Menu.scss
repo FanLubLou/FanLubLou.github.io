@@ -27,7 +27,6 @@
         //ici je précise fa-heart plutôt que i seulement car sinon, je créé une confusion plus tard avec mon autre icône i check de chez Font Awesome
         .fa-heart {
             position: absolute;
-            // left: 308px;
             right: 15px; 
             font-size: 22px;
         }
@@ -50,7 +49,18 @@
                 visibility: visible;
             }
         }  
-    &__dishes {
+    &__starter1,
+    &__starter2,
+    &__starter3,
+    &__starter4,
+    &__dish1,
+    &__dish2,
+    &__dish3,
+    &__dessert1,
+    &__dessert2,
+    &__dessert3,
+    &__dishes
+     {
         @include menu-card;
         }
 
@@ -58,6 +68,7 @@
             position: relative; 
             font-weight: 300;       
         }
+        // les pseudo-éléments  ::before  et  ::after  créent un élément qui est respectivement le premier ou le dernier enfant de l’élément sélectionné. Cf cours case 12. 
         h3::before {
             content: "";
             position: absolute;
@@ -68,7 +79,7 @@
             background-color: var(--green);
         }
     }
-    // Ici, je fais remonter les footer des menus
+    // Ici, je fais remonter les footer des menus pour compenser la position absolute -50px de l'élément précédent
     .height-adaptation {
         margin-top: -50px;
     }

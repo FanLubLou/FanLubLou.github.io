@@ -55,10 +55,71 @@ input[type=checkbox] {
     width: 93%;
     gap:12px;
     display: flex;
-    flex-direction: column;      
+    flex-direction: column;
+    position: relative;
+    @media (max-width: 1440px) {
+        #activation2:checked ~ label {
+            .menu__starter1__card__selectButton {
+                    opacity: 1;
+                    width: 59px;                                                        
+                }  
+        }
+        #activation3:checked ~ label {
+            .menu__starter2__card__selectButton {
+                    opacity: 1;
+                    width: 59px;                                                        
+                }  
+        }
+        #activation4:checked ~ label {
+            .menu__starter3__card__selectButton {
+                    opacity: 1;
+                    width: 59px;                                                        
+                }  
+        }
+        #activation5:checked ~ label {
+            .menu__starter4__card__selectButton {
+                    opacity: 1;
+                    width: 59px;                                                        
+                }  
+        }
+        #activation6:checked ~ label {
+            .menu__dish1__card__selectButton {
+                    opacity: 1;
+                    width: 59px;                                                        
+                }  
+        }
+        #activation7:checked ~ label {
+            .menu__dish2__card__selectButton {
+                    opacity: 1;
+                    width: 59px;                                                        
+                }  
+        }
+        #activation8:checked ~ label {
+            .menu__dish3__card__selectButton {
+                    opacity: 1;
+                    width: 59px;                                                        
+                }  
+        }
+        #activation9:checked ~ label {
+            .menu__dessert1__card__selectButton {
+                    opacity: 1;
+                    width: 59px;                                                        
+                }  
+        }
+        #activation10:checked ~ label {
+            .menu__dessert2__card__selectButton {
+                    opacity: 1;
+                    width: 59px;                                                        
+                }  
+        }
+        #activation11:checked ~ label {
+            .menu__dessert3__card__selectButton {
+                    opacity: 1;
+                    width: 59px;                                                        
+                }  
+        }
+    }         
     &__card {
-        // pour pouvoir positionner le bouton de sélection
-        // position: relative;
         width:100%;
         border-radius: 15px;
         background-color: white;
@@ -72,7 +133,8 @@ input[type=checkbox] {
         display: flex;
         align-items: center;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-between;        
+     
         &__textAndPrice{
             width: 100%;
             display: flex;
@@ -100,32 +162,22 @@ input[type=checkbox] {
                 font-weight: 500;
                 // je préfère mettre un padding right à l'élément price pour ne pas avoir à en mettre sur l'élément parent card
                 // Ainsi quand le selected button apparait, il se juxtapose bien avec l'élément parent
-                padding-right: 15px;
-                //Pour l'instant, je ne parviens pas à aligner le price avec le bas
-                // display: flex;
-                // align-items:baseline;
-                // justify-content: flex-end;
-                // flex-direction: column-reverse;
-                    
+                padding-right: 15px;                                    
                 }
-        }        
+        }
         &__selectButton{
-            // position:absolute;
-            // right: 0;
-            // top: 0;
+            opacity: 0;
+            width: 0px;
+            transition:ease-out 0.25s;
             display: flex;
             justify-content: center;
             align-items: center;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
-            height: 100%;
-            width: 0;
+            height: 100%;            
             padding: 15px 0px; 
-            opacity: 0;
-            transition:ease-out 0.25s;
-            
-            &__outline{
-                
+            background-color: var(--green);         
+            &__outline{                
                 &__circle{
                     width: 30px;
                     height: 30px;
@@ -137,16 +189,11 @@ input[type=checkbox] {
                     align-items: center;
                     &__conteneur-i{
                         display: flex;
-                        // align-items: center;
                         text-align: center;
                         justify-content: center;    
                         
                         i {
-                            // display: flex;
-                            // align-items: center;
-                            // justify-content: center;
-                            // margin: auto;
-                            // padding: auto;
+                           
                             margin: 50px;
                             text-align: center;
                             color: var(--green);
@@ -154,14 +201,32 @@ input[type=checkbox] {
                         }
                     }    
                 }    
-            } 
-            &:hover {
-                opacity: 1;
-                width: 59px;
-                background-color: var(--green);
-                padding: 15px 0px;                 
-        }
+            }       
                 
         }
+        @media (min-width: 1440px) {
+            // Combinateur d'adjacence - Partie III du cours sur les animations CSS
+            &:hover .menu__starter1__card__selectButton,
+            &:hover .menu__starter2__card__selectButton,
+            &:hover .menu__starter3__card__selectButton,
+            &:hover .menu__starter4__card__selectButton,
+            &:hover .menu__dish1__card__selectButton,
+            &:hover .menu__dish2__card__selectButton,
+            &:hover .menu__dish3__card__selectButton,
+            &:hover .menu__dessert1__card__selectButton,
+            &:hover .menu__dessert2__card__selectButton,
+            &:hover .menu__dessert3__card__selectButton,
+                {           
+                    opacity: 1; 
+                    width: 59px;
+                }
+       
+        }      
+         
     }
+    
+     
+    
+                
 }
+
