@@ -52,71 +52,192 @@ input[type=checkbox] {
 // Je créé une mixin ici pour la carte menu
 
 @mixin menu-card{
-    width: 93%;
+    width: 60%;
     gap:12px;
     display: flex;
     flex-direction: column;
     position: relative;
     @media (max-width: 1440px) {
+        width: 93%;
         #activation2:checked ~ label {
             .menu__starter1__card__selectButton {
                     opacity: 1;
                     width: 59px;                                                        
                 }  
+            .menu__starter1__card__selectButton__outline__circle__conteneur-i {           
+                    
+                justify-content:center;
+                }
+            .menu__starter1__card__selectButton__outline__circle i {
+
+                width: auto;
+            }
+            .menu__starter1__card__selectButton__outline__circle {
+                opacity: 1;
+                width: 30px;
+            }    
         }
         #activation3:checked ~ label {
             .menu__starter2__card__selectButton {
                     opacity: 1;
                     width: 59px;                                                        
-                }  
+                }
+            .menu__starter2__card__selectButton__outline__circle__conteneur-i {           
+                
+                justify-content:center;
+                }
+            .menu__starter2__card__selectButton__outline__circle i {
+
+                width: auto;
+            }
+            .menu__starter2__card__selectButton__outline__circle {
+                opacity: 1;
+                width: 30px;
+            }       
         }
         #activation4:checked ~ label {
             .menu__starter3__card__selectButton {
                     opacity: 1;
                     width: 59px;                                                        
-                }  
+                }
+            .menu__starter3__card__selectButton__outline__circle__conteneur-i {           
+                
+                justify-content:center;
+                }
+            .menu__starter3__card__selectButton__outline__circle i {
+
+                width: auto;
+            }
+            .menu__starter3__card__selectButton__outline__circle {
+                opacity: 1;
+                width: 30px;
+            }        
         }
         #activation5:checked ~ label {
             .menu__starter4__card__selectButton {
                     opacity: 1;
                     width: 59px;                                                        
-                }  
+                }
+            .menu__starter4__card__selectButton__outline__circle__conteneur-i {           
+                
+                justify-content:center;
+                }
+            .menu__starter4__card__selectButton__outline__circle i {
+
+                width: auto;
+            }
+            .menu__starter4__card__selectButton__outline__circle {
+                opacity: 1;
+                width: 30px;
+            }        
         }
         #activation6:checked ~ label {
             .menu__dish1__card__selectButton {
                     opacity: 1;
                     width: 59px;                                                        
-                }  
+                }
+            .menu__dish1__card__selectButton__outline__circle__conteneur-i {           
+                
+                justify-content:center;
+                }
+            .menu__dish1__card__selectButton__outline__circle i {
+
+                width: auto;
+            }
+            .menu__dish1__card__selectButton__outline__circle {
+                opacity: 1;
+                width: 30px;
+            }    
         }
         #activation7:checked ~ label {
             .menu__dish2__card__selectButton {
                     opacity: 1;
                     width: 59px;                                                        
-                }  
+                }
+            .menu__dish2__card__selectButton__outline__circle__conteneur-i {           
+                
+                justify-content:center;
+                }
+            .menu__dish2__card__selectButton__outline__circle i {
+
+                width: auto;
+            }
+            .menu__dish2__card__selectButton__outline__circle {
+                opacity: 1;
+                width: 30px;
+            }        
         }
         #activation8:checked ~ label {
             .menu__dish3__card__selectButton {
                     opacity: 1;
                     width: 59px;                                                        
-                }  
+                }
+            .menu__dish3__card__selectButton__outline__circle__conteneur-i {           
+                
+                justify-content:center;
+                }
+            .menu__dish3__card__selectButton__outline__circle i {
+
+                width: auto;
+            }
+            .menu__dish3__card__selectButton__outline__circle {
+                opacity: 1;
+                width: 30px;
+            }        
         }
         #activation9:checked ~ label {
             .menu__dessert1__card__selectButton {
                     opacity: 1;
                     width: 59px;                                                        
-                }  
+                }
+            .menu__dessert1__card__selectButton__outline__circle__conteneur-i {           
+                
+                justify-content:center;
+                }
+            .menu__dessert1__card__selectButton__outline__circle i {
+
+                width: auto;
+            }
+            .menu__dessert1__card__selectButton__outline__circle {
+                opacity: 1;
+                width: 30px;
+            }               
         }
         #activation10:checked ~ label {
             .menu__dessert2__card__selectButton {
                     opacity: 1;
                     width: 59px;                                                        
-                }  
+                } 
+            .menu__dessert2__card__selectButton__outline__circle__conteneur-i {           
+        
+            justify-content:center;
+            }
+            .menu__dessert2__card__selectButton__outline__circle i {
+
+            width: auto;
+            }
+            .menu__dessert2__card__selectButton__outline__circle {
+                opacity: 1;
+                width: 30px;
+            }  
         }
         #activation11:checked ~ label {
             .menu__dessert3__card__selectButton {
                     opacity: 1;
                     width: 59px;                                                        
-                }  
+                }
+            .menu__dessert3__card__selectButton__outline__circle__conteneur-i {           
+            
+                justify-content:center;
+                }
+            .menu__dessert3__card__selectButton__outline__circle i {
+
+                width: auto;
+            }
+            .menu__dessert3__card__selectButton__outline__circle {
+                opacity: 1;
+                width: 30px;
+            }   
         }
     }         
     &__card {
@@ -181,10 +302,13 @@ input[type=checkbox] {
             border-bottom-right-radius: 15px;
             height: 100%;            
             padding: 15px 0px; 
-            background-color: var(--green);         
+            background-color: var(--green);
+                    
             &__outline{                
                 &__circle{
                     width: 30px;
+                    opacity: 0;
+                    width: 0px;
                     height: 30px;
                     border-radius: 15px;
                     border: 2px solid white;
@@ -192,25 +316,84 @@ input[type=checkbox] {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    
                     &__conteneur-i{
                         display: flex;
                         text-align: center;
-                        justify-content: center;    
-                        
-                        i {
-                           
+                        justify-content:right;
+                        width: 100%;                          
+                        i {    
+                            width: 0px;                      
                             margin: 50px;
                             text-align: center;
                             color: var(--green);
-                            font-size: 1rem;
+                            font-size: 1rem;                            
                         }
                     }    
                 }    
-            }       
-                
+            }      
+        
+            
+            
         }
         @media (min-width: 1440px) {
             // Combinateur d'adjacence - Partie III du cours sur les animations CSS
+            &:hover .menu__starter1__card__selectButton__outline__circle__conteneur-i,
+            &:hover .menu__starter2__card__selectButton__outline__circle__conteneur-i,
+            &:hover .menu__starter3__card__selectButton__outline__circle__conteneur-i,
+            &:hover .menu__starter4__card__selectButton__outline__circle__conteneur-i,
+            &:hover .menu__dish1__card__selectButton__outline__circle__conteneur-i,
+            &:hover .menu__dish2__card__selectButton__outline__circle__conteneur-i,
+            &:hover .menu__dish3__card__selectButton__outline__circle__conteneur-i,
+            &:hover .menu__dessert1__card__selectButton__outline__circle__conteneur-i,
+            &:hover .menu__dessert2__card__selectButton__outline__circle__conteneur-i,
+            &:hover .menu__dessert3__card__selectButton__outline__circle__conteneur-i
+                {           
+                    
+                    justify-content:center;
+                }
+        }
+        @media (min-width: 1440px) {
+            // Combinateur d'adjacence - Partie III du cours sur les animations CSS
+            &:hover .menu__starter1__card__selectButton__outline__circle i,
+            &:hover .menu__starter2__card__selectButton__outline__circle i,
+            &:hover .menu__starter3__card__selectButton__outline__circle i,
+            &:hover .menu__starter4__card__selectButton__outline__circle i,
+            &:hover .menu__dish1__card__selectButton__outline__circle i,
+            &:hover .menu__dish2__card__selectButton__outline__circle i,
+            &:hover .menu__dish3__card__selectButton__outline__circle i,
+            &:hover .menu__dessert1__card__selectButton__outline__circle i,
+            &:hover .menu__dessert2__card__selectButton__outline__circle i,
+            &:hover .menu__dessert3__card__selectButton__outline__circle i
+                {           
+                    
+                    width: auto;
+                }
+        }
+
+
+        @media (min-width: 1440px) {
+            // Combinateur d'adjacence - Partie III du cours sur les animations CSS
+            &:hover .menu__starter1__card__selectButton__outline__circle,
+            &:hover .menu__starter2__card__selectButton__outline__circle,
+            &:hover .menu__starter3__card__selectButton__outline__circle,
+            &:hover .menu__starter4__card__selectButton__outline__circle,
+            &:hover .menu__dish1__card__selectButton__outline__circle,
+            &:hover .menu__dish2__card__selectButton__outline__circle,
+            &:hover .menu__dish3__card__selectButton__outline__circle,
+            &:hover .menu__dessert1__card__selectButton__outline__circle,
+            &:hover .menu__dessert2__card__selectButton__outline__circle,
+            &:hover .menu__dessert3__card__selectButton__outline__circle
+                {           
+                    opacity: 1;
+                    width: 30px;
+                    
+                }
+        }
+        @media (min-width: 1440px) {
+            // Combinateur d'adjacence - Partie III du cours sur les animations CSS
+       
+
             &:hover .menu__starter1__card__selectButton,
             &:hover .menu__starter2__card__selectButton,
             &:hover .menu__starter3__card__selectButton,
@@ -221,11 +404,13 @@ input[type=checkbox] {
             &:hover .menu__dessert1__card__selectButton,
             &:hover .menu__dessert2__card__selectButton,
             &:hover .menu__dessert3__card__selectButton
-                {           
+                {   
+                    // margin-right: 0px;        
                     opacity: 1; 
                     width: 59px;
+                    
                 }
-        }        
+        }         
         
     }      
                   

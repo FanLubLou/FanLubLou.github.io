@@ -1,7 +1,21 @@
+
+.main-menu img {
+    @media (min-width: 1440px){
+    // ici, l'image est un peu plus haute que dans la page d'accueil
+    height: 383px;
+    // ici j'ajuste la position verticale de l'image par rapport à son masque pour correspondre à la maquette
+    object-position: 0 -370px;
+    
+    }
+}
+
+
+
 .menu {
-    width: 100%;
+    
+    width: 93%; 
     position: relative;
-    top: -50px;
+    top: -30px;
     background-color: var(--bg-grey-1);
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -10,6 +24,12 @@
     align-items: center;
     gap: 40px;
     padding-bottom: 40px;
+    @media (min-width: 1440px){
+        // 1055px/1440px sur la maquette
+        width: 73%;
+
+    }
+
       
     
     &__title{
@@ -79,7 +99,7 @@
             background-color: var(--green);
         }
     }
-    // Ici, je fais remonter les footer des menus pour compenser la position absolute -50px de l'élément précédent
+    // Ici, je fais remonter les footer des menus pour compenser la position absolute -30px de l'élément précédent
     .height-adaptation {
-        margin-top: -50px;
+        margin-top: -30px;
     }
