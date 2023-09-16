@@ -1,3 +1,5 @@
+
+/////////////////////////////// loader ////////////////////////
 .loading {
     width: 100vw;
     height: 100vh;
@@ -89,6 +91,7 @@
 
 
 .main-wrapper {
+    // width: 375px;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -111,8 +114,12 @@
         justify-content: center;
         width: 100%;
         height: 63px;
-        // Pour les menus
-        gap: 42px;
+        //Pour que la flêche apparaisse à gauche à 17px du bord tout en laissant le logo bien centré
+        position: relative;
+        a {
+            position: absolute;
+            left: 17px;
+        }
         img {
             /* je fixe la largeur, j'aurais pu fixer la hauteur */
             width: 197px;
@@ -231,7 +238,7 @@ main img {
     margin: auto;
     box-sizing: border-box;
         @media (min-width: 1440px) {
-        justify-content: center;
+        // justify-content: center;
         height: 229px;
     
     }
@@ -245,7 +252,7 @@ main img {
         @media (min-width: 1440px) {
             width: 100%;
             padding: 50px 180px;
-
+            align-items: center;
         }    
         h1{
             margin-bottom: 26px;
@@ -437,7 +444,8 @@ main img {
 }
 footer {
     // margin-top: -50px;
-    width: 375px;
+    // width: 375px;
+    width: 100%;
     height: 186px;
     background-color: var(--ft-grey-3);
     box-sizing: border-box;

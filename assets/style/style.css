@@ -205,7 +205,11 @@ input[type=checkbox] {
   justify-content: center;
   width: 100%;
   height: 63px;
-  gap: 42px;
+  position: relative;
+}
+.headerwrapper__logo a {
+  position: absolute;
+  left: 17px;
 }
 .headerwrapper__logo img {
   /* je fixe la largeur, j'aurais pu fixer la hauteur */
@@ -319,7 +323,6 @@ main img {
 }
 @media (min-width: 1440px) {
   .operation {
-    justify-content: center;
     height: 229px;
   }
 }
@@ -335,6 +338,7 @@ main img {
   .operation__main-container {
     width: 100%;
     padding: 50px 180px;
+    align-items: center;
   }
 }
 .operation__main-container h1 {
@@ -492,7 +496,7 @@ main img {
 }
 
 footer {
-  width: 375px;
+  width: 100%;
   height: 186px;
   background-color: var(--ft-grey-3);
   box-sizing: border-box;
@@ -571,10 +575,17 @@ footer .container-footer__footer-content__alignment i {
 .menu__title {
   width: 93%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  gap: 25px;
   align-items: baseline;
   margin-top: 32px;
   position: relative;
+}
+@media (min-width: 1440px) {
+  .menu__title {
+    justify-content: center;
+    gap: 24px;
+  }
 }
 .menu h1 {
   font-style: italic;
@@ -582,8 +593,13 @@ footer .container-footer__footer-content__alignment i {
 }
 .menu .fa-heart {
   position: absolute;
-  right: 15px;
+  right: 25px;
   font-size: 22px;
+}
+@media (min-width: 1440px) {
+  .menu .fa-heart {
+    right: unset;
+  }
 }
 .menu .full {
   background-image: linear-gradient(175deg, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -782,9 +798,13 @@ footer .container-footer__footer-content__alignment i {
 }
 .menu__starter1__card__textAndPrice__text h2, .menu__starter2__card__textAndPrice__text h2, .menu__starter3__card__textAndPrice__text h2, .menu__starter4__card__textAndPrice__text h2, .menu__dish1__card__textAndPrice__text h2, .menu__dish2__card__textAndPrice__text h2, .menu__dish3__card__textAndPrice__text h2, .menu__dessert1__card__textAndPrice__text h2, .menu__dessert2__card__textAndPrice__text h2, .menu__dessert3__card__textAndPrice__text h2, .menu__dishes__card__textAndPrice__text h2 {
   font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__starter1__card__textAndPrice__text p, .menu__starter2__card__textAndPrice__text p, .menu__starter3__card__textAndPrice__text p, .menu__starter4__card__textAndPrice__text p, .menu__dish1__card__textAndPrice__text p, .menu__dish2__card__textAndPrice__text p, .menu__dish3__card__textAndPrice__text p, .menu__dessert1__card__textAndPrice__text p, .menu__dessert2__card__textAndPrice__text p, .menu__dessert3__card__textAndPrice__text p, .menu__dishes__card__textAndPrice__text p {
   font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__starter1__card__textAndPrice__price, .menu__starter2__card__textAndPrice__price, .menu__starter3__card__textAndPrice__price, .menu__starter4__card__textAndPrice__price, .menu__dish1__card__textAndPrice__price, .menu__dish2__card__textAndPrice__price, .menu__dish3__card__textAndPrice__price, .menu__dessert1__card__textAndPrice__price, .menu__dessert2__card__textAndPrice__price, .menu__dessert3__card__textAndPrice__price, .menu__dishes__card__textAndPrice__price {
   height: 50%;
@@ -850,6 +870,11 @@ footer .container-footer__footer-content__alignment i {
   .menu__starter1__card:hover .menu__starter1__card__selectButton, .menu__starter1__card:hover .menu__starter2__card__selectButton, .menu__starter1__card:hover .menu__starter3__card__selectButton, .menu__starter1__card:hover .menu__starter4__card__selectButton, .menu__starter1__card:hover .menu__dish1__card__selectButton, .menu__starter1__card:hover .menu__dish2__card__selectButton, .menu__starter1__card:hover .menu__dish3__card__selectButton, .menu__starter1__card:hover .menu__dessert1__card__selectButton, .menu__starter1__card:hover .menu__dessert2__card__selectButton, .menu__starter1__card:hover .menu__dessert3__card__selectButton, .menu__starter2__card:hover .menu__starter1__card__selectButton, .menu__starter2__card:hover .menu__starter2__card__selectButton, .menu__starter2__card:hover .menu__starter3__card__selectButton, .menu__starter2__card:hover .menu__starter4__card__selectButton, .menu__starter2__card:hover .menu__dish1__card__selectButton, .menu__starter2__card:hover .menu__dish2__card__selectButton, .menu__starter2__card:hover .menu__dish3__card__selectButton, .menu__starter2__card:hover .menu__dessert1__card__selectButton, .menu__starter2__card:hover .menu__dessert2__card__selectButton, .menu__starter2__card:hover .menu__dessert3__card__selectButton, .menu__starter3__card:hover .menu__starter1__card__selectButton, .menu__starter3__card:hover .menu__starter2__card__selectButton, .menu__starter3__card:hover .menu__starter3__card__selectButton, .menu__starter3__card:hover .menu__starter4__card__selectButton, .menu__starter3__card:hover .menu__dish1__card__selectButton, .menu__starter3__card:hover .menu__dish2__card__selectButton, .menu__starter3__card:hover .menu__dish3__card__selectButton, .menu__starter3__card:hover .menu__dessert1__card__selectButton, .menu__starter3__card:hover .menu__dessert2__card__selectButton, .menu__starter3__card:hover .menu__dessert3__card__selectButton, .menu__starter4__card:hover .menu__starter1__card__selectButton, .menu__starter4__card:hover .menu__starter2__card__selectButton, .menu__starter4__card:hover .menu__starter3__card__selectButton, .menu__starter4__card:hover .menu__starter4__card__selectButton, .menu__starter4__card:hover .menu__dish1__card__selectButton, .menu__starter4__card:hover .menu__dish2__card__selectButton, .menu__starter4__card:hover .menu__dish3__card__selectButton, .menu__starter4__card:hover .menu__dessert1__card__selectButton, .menu__starter4__card:hover .menu__dessert2__card__selectButton, .menu__starter4__card:hover .menu__dessert3__card__selectButton, .menu__dish1__card:hover .menu__starter1__card__selectButton, .menu__dish1__card:hover .menu__starter2__card__selectButton, .menu__dish1__card:hover .menu__starter3__card__selectButton, .menu__dish1__card:hover .menu__starter4__card__selectButton, .menu__dish1__card:hover .menu__dish1__card__selectButton, .menu__dish1__card:hover .menu__dish2__card__selectButton, .menu__dish1__card:hover .menu__dish3__card__selectButton, .menu__dish1__card:hover .menu__dessert1__card__selectButton, .menu__dish1__card:hover .menu__dessert2__card__selectButton, .menu__dish1__card:hover .menu__dessert3__card__selectButton, .menu__dish2__card:hover .menu__starter1__card__selectButton, .menu__dish2__card:hover .menu__starter2__card__selectButton, .menu__dish2__card:hover .menu__starter3__card__selectButton, .menu__dish2__card:hover .menu__starter4__card__selectButton, .menu__dish2__card:hover .menu__dish1__card__selectButton, .menu__dish2__card:hover .menu__dish2__card__selectButton, .menu__dish2__card:hover .menu__dish3__card__selectButton, .menu__dish2__card:hover .menu__dessert1__card__selectButton, .menu__dish2__card:hover .menu__dessert2__card__selectButton, .menu__dish2__card:hover .menu__dessert3__card__selectButton, .menu__dish3__card:hover .menu__starter1__card__selectButton, .menu__dish3__card:hover .menu__starter2__card__selectButton, .menu__dish3__card:hover .menu__starter3__card__selectButton, .menu__dish3__card:hover .menu__starter4__card__selectButton, .menu__dish3__card:hover .menu__dish1__card__selectButton, .menu__dish3__card:hover .menu__dish2__card__selectButton, .menu__dish3__card:hover .menu__dish3__card__selectButton, .menu__dish3__card:hover .menu__dessert1__card__selectButton, .menu__dish3__card:hover .menu__dessert2__card__selectButton, .menu__dish3__card:hover .menu__dessert3__card__selectButton, .menu__dessert1__card:hover .menu__starter1__card__selectButton, .menu__dessert1__card:hover .menu__starter2__card__selectButton, .menu__dessert1__card:hover .menu__starter3__card__selectButton, .menu__dessert1__card:hover .menu__starter4__card__selectButton, .menu__dessert1__card:hover .menu__dish1__card__selectButton, .menu__dessert1__card:hover .menu__dish2__card__selectButton, .menu__dessert1__card:hover .menu__dish3__card__selectButton, .menu__dessert1__card:hover .menu__dessert1__card__selectButton, .menu__dessert1__card:hover .menu__dessert2__card__selectButton, .menu__dessert1__card:hover .menu__dessert3__card__selectButton, .menu__dessert2__card:hover .menu__starter1__card__selectButton, .menu__dessert2__card:hover .menu__starter2__card__selectButton, .menu__dessert2__card:hover .menu__starter3__card__selectButton, .menu__dessert2__card:hover .menu__starter4__card__selectButton, .menu__dessert2__card:hover .menu__dish1__card__selectButton, .menu__dessert2__card:hover .menu__dish2__card__selectButton, .menu__dessert2__card:hover .menu__dish3__card__selectButton, .menu__dessert2__card:hover .menu__dessert1__card__selectButton, .menu__dessert2__card:hover .menu__dessert2__card__selectButton, .menu__dessert2__card:hover .menu__dessert3__card__selectButton, .menu__dessert3__card:hover .menu__starter1__card__selectButton, .menu__dessert3__card:hover .menu__starter2__card__selectButton, .menu__dessert3__card:hover .menu__starter3__card__selectButton, .menu__dessert3__card:hover .menu__starter4__card__selectButton, .menu__dessert3__card:hover .menu__dish1__card__selectButton, .menu__dessert3__card:hover .menu__dish2__card__selectButton, .menu__dessert3__card:hover .menu__dish3__card__selectButton, .menu__dessert3__card:hover .menu__dessert1__card__selectButton, .menu__dessert3__card:hover .menu__dessert2__card__selectButton, .menu__dessert3__card:hover .menu__dessert3__card__selectButton, .menu__dishes__card:hover .menu__starter1__card__selectButton, .menu__dishes__card:hover .menu__starter2__card__selectButton, .menu__dishes__card:hover .menu__starter3__card__selectButton, .menu__dishes__card:hover .menu__starter4__card__selectButton, .menu__dishes__card:hover .menu__dish1__card__selectButton, .menu__dishes__card:hover .menu__dish2__card__selectButton, .menu__dishes__card:hover .menu__dish3__card__selectButton, .menu__dishes__card:hover .menu__dessert1__card__selectButton, .menu__dishes__card:hover .menu__dessert2__card__selectButton, .menu__dishes__card:hover .menu__dessert3__card__selectButton {
     opacity: 1;
     width: 59px;
+  }
+}
+@media (min-width: 1440px) {
+  .menu__dishes {
+    width: 60%;
   }
 }
 .menu h3 {
