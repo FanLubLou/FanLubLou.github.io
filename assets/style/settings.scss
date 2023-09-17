@@ -279,12 +279,18 @@ input[type=checkbox] {
               
                 
                 
-                h2 {
+                &__equivalent-h2{
+                    //Je remets ici les infos du h2
+                    margin: 0;
+                    font-size: 1.125rem;                    
                     font-weight: 500;
                     text-overflow: ellipsis;
                     overflow: hidden;
                 }
-                p {
+                &__equivalent-p{
+                    //Je remets ici les infos du p
+                    margin: 0;
+                    font-size: 1.125rem;                    
                     font-size: 15px;
                     text-overflow: ellipsis;
                     overflow: hidden;    

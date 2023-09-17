@@ -796,12 +796,16 @@ footer .container-footer__footer-content__alignment i {
   flex-wrap: nowrap;
   white-space: nowrap;
 }
-.menu__starter1__card__textAndPrice__text h2, .menu__starter2__card__textAndPrice__text h2, .menu__starter3__card__textAndPrice__text h2, .menu__starter4__card__textAndPrice__text h2, .menu__dish1__card__textAndPrice__text h2, .menu__dish2__card__textAndPrice__text h2, .menu__dish3__card__textAndPrice__text h2, .menu__dessert1__card__textAndPrice__text h2, .menu__dessert2__card__textAndPrice__text h2, .menu__dessert3__card__textAndPrice__text h2, .menu__dishes__card__textAndPrice__text h2 {
+.menu__starter1__card__textAndPrice__text__equivalent-h2, .menu__starter2__card__textAndPrice__text__equivalent-h2, .menu__starter3__card__textAndPrice__text__equivalent-h2, .menu__starter4__card__textAndPrice__text__equivalent-h2, .menu__dish1__card__textAndPrice__text__equivalent-h2, .menu__dish2__card__textAndPrice__text__equivalent-h2, .menu__dish3__card__textAndPrice__text__equivalent-h2, .menu__dessert1__card__textAndPrice__text__equivalent-h2, .menu__dessert2__card__textAndPrice__text__equivalent-h2, .menu__dessert3__card__textAndPrice__text__equivalent-h2, .menu__dishes__card__textAndPrice__text__equivalent-h2 {
+  margin: 0;
+  font-size: 1.125rem;
   font-weight: 500;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu__starter1__card__textAndPrice__text p, .menu__starter2__card__textAndPrice__text p, .menu__starter3__card__textAndPrice__text p, .menu__starter4__card__textAndPrice__text p, .menu__dish1__card__textAndPrice__text p, .menu__dish2__card__textAndPrice__text p, .menu__dish3__card__textAndPrice__text p, .menu__dessert1__card__textAndPrice__text p, .menu__dessert2__card__textAndPrice__text p, .menu__dessert3__card__textAndPrice__text p, .menu__dishes__card__textAndPrice__text p {
+.menu__starter1__card__textAndPrice__text__equivalent-p, .menu__starter2__card__textAndPrice__text__equivalent-p, .menu__starter3__card__textAndPrice__text__equivalent-p, .menu__starter4__card__textAndPrice__text__equivalent-p, .menu__dish1__card__textAndPrice__text__equivalent-p, .menu__dish2__card__textAndPrice__text__equivalent-p, .menu__dish3__card__textAndPrice__text__equivalent-p, .menu__dessert1__card__textAndPrice__text__equivalent-p, .menu__dessert2__card__textAndPrice__text__equivalent-p, .menu__dessert3__card__textAndPrice__text__equivalent-p, .menu__dishes__card__textAndPrice__text__equivalent-p {
+  margin: 0;
+  font-size: 1.125rem;
   font-size: 15px;
   text-overflow: ellipsis;
   overflow: hidden;
