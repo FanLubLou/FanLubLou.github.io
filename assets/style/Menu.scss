@@ -92,6 +92,9 @@
         @include menu-card;
         }
     &__dishes {
+        article h2{
+            display: none;
+        }
         @media (min-width: 1440px){
             width: 60%;
         }

@@ -876,6 +876,9 @@ footer .container-footer__footer-content__alignment i {
     width: 59px;
   }
 }
+.menu__dishes article h2 {
+  display: none;
+}
 @media (min-width: 1440px) {
   .menu__dishes {
     width: 60%;
