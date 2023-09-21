@@ -267,6 +267,9 @@ input[type=checkbox] {
             flex-direction: row;
             align-items: flex-end;
             justify-content: space-between;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding-right: 15px; 
             
             &__text{            
                 width: 88%;
@@ -276,6 +279,7 @@ input[type=checkbox] {
                 flex-wrap: nowrap;
                 // // on force ici le texte à rester sur une seule ligne
                 white-space: nowrap;
+                
               
                 
                 
@@ -301,8 +305,8 @@ input[type=checkbox] {
                 font-weight: bold;
                 font-weight: 500;
                 // je préfère mettre un padding right à l'élément price pour ne pas avoir à en mettre sur l'élément parent card
-                // Ainsi quand le selected button apparait, il se juxtapose bien avec l'élément parent
-                padding-right: 15px;                                    
+                // Ainsi quand le selected button apparait, il se juxtapose bien avec l'élément parent                
+                                                   
                 }
         }
         &__selectButton{

@@ -788,6 +788,9 @@ footer .container-footer__footer-content__alignment i {
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-right: 15px;
 }
 .menu__starter1__card__textAndPrice__text, .menu__starter2__card__textAndPrice__text, .menu__starter3__card__textAndPrice__text, .menu__starter4__card__textAndPrice__text, .menu__dish1__card__textAndPrice__text, .menu__dish2__card__textAndPrice__text, .menu__dish3__card__textAndPrice__text, .menu__dessert1__card__textAndPrice__text, .menu__dessert2__card__textAndPrice__text, .menu__dessert3__card__textAndPrice__text, .menu__dishes__card__textAndPrice__text {
   width: 88%;
@@ -814,7 +817,6 @@ footer .container-footer__footer-content__alignment i {
   height: 50%;
   font-weight: bold;
   font-weight: 500;
-  padding-right: 15px;
 }
 .menu__starter1__card__selectButton, .menu__starter2__card__selectButton, .menu__starter3__card__selectButton, .menu__starter4__card__selectButton, .menu__dish1__card__selectButton, .menu__dish2__card__selectButton, .menu__dish3__card__selectButton, .menu__dessert1__card__selectButton, .menu__dessert2__card__selectButton, .menu__dessert3__card__selectButton, .menu__dishes__card__selectButton {
   opacity: 0;
