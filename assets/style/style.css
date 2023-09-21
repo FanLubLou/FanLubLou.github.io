@@ -207,7 +207,7 @@ input[type=checkbox] {
   height: 63px;
   position: relative;
 }
-.headerwrapper__logo a {
+.headerwrapper__logo a i {
   position: absolute;
   left: 17px;
 }
