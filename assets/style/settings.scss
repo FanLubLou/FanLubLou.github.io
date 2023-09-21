@@ -255,10 +255,15 @@ input[type=checkbox] {
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
+
+        will-change: transform;
+        
         // J'utilise l'animation fadeIn déclarée plus bas (J'instancie l'animation)
         // Ici, le but est de faire apparaître les plats les uns après les autres
         //le mot clé « forwards » prolonge les valeurs finales d'une animation jusqu'à ce que la page soit rechargée ou que le navigateur soit fermé,
         // animation: fadeIn 0.6s ease-in-out forwards;
+
+        
         
         
         &__textAndPrice{
@@ -267,9 +272,12 @@ input[type=checkbox] {
             flex-direction: row;
             align-items: flex-end;
             justify-content: space-between;
+            padding-right: 15px; 
             text-overflow: ellipsis;
             overflow: hidden;
-            padding-right: 15px; 
+
+            
+            
             
             &__text{            
                 width: 88%;
@@ -290,6 +298,9 @@ input[type=checkbox] {
                     font-weight: 500;
                     text-overflow: ellipsis;
                     overflow: hidden;
+                    
+
+                    
                 }
                 &__equivalent-p{
                     //Je remets ici les infos du p
@@ -310,6 +321,7 @@ input[type=checkbox] {
                 }
         }
         &__selectButton{
+            
             opacity: 0;
             width: 0px;
             transition:ease-out 0.25s;
@@ -324,6 +336,7 @@ input[type=checkbox] {
                     
             &__outline{                
                 &__circle{
+                    
                     width: 30px;
                     opacity: 0;
                     width: 0px;
@@ -436,47 +449,47 @@ input[type=checkbox] {
 
 
 .menu__starter1__card{
-    animation: fadeIn 0.2s ease-in-out forwards;
+    animation: fadeIn 0.2s ease-in-out;
     
 }
 .menu__starter2__card{
-    animation: fadeIn 0.4s ease-in-out forwards;
+    animation: fadeIn 0.4s ease-in-out;
     
 }
 .menu__starter3__card{
-    animation: fadeIn 0.6s ease-in-out forwards;
+    animation: fadeIn 0.6s ease-in-out;
     
 }
 .menu__starter4__card{
-    animation: fadeIn 0.8s ease-in-out forwards;
+    animation: fadeIn 0.8s ease-in-out;
     
 }
 .menu__dish1__card{
-    animation: fadeIn 1.0s ease-in-out forwards;
+    animation: fadeIn 1.0s ease-in-out;
     
 }
 .menu__dish2__card{
-    animation: fadeIn 1.2s ease-in-out forwards;
+    animation: fadeIn 1.2s ease-in-out;
     
 }
 .menu__dish3__card{
-    animation: fadeIn 1.4s ease-in-out forwards;
+    animation: fadeIn 1.4s ease-in-out;
     
 }
 .menu__dessert1__card{
-    animation: fadeIn 1.6s ease-in-out forwards;
+    animation: fadeIn 1.6s ease-in-out;
     
 }
 .menu__dessert2__card{
-    animation: fadeIn 1.8s ease-in-out forwards;
+    animation: fadeIn 1.8s ease-in-out;
     
 }
 .menu__dessert3__card{
-    animation: fadeIn 2.0s ease-in-out forwards;
+    animation: fadeIn 2.0s ease-in-out;
     
 }
 
-// je déclare ici une animation de fondu (fadeIn) en mixin
+// je déclare ici une animation de fondu (fadeIn)
 @keyframes fadeIn {
     from {
     opacity: 0;
