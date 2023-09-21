@@ -183,6 +183,7 @@ input[type=checkbox] {
   }
 }
 .main-wrapper {
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;

@@ -91,6 +91,7 @@
 
 .main-wrapper {
     // width: 375px;
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
